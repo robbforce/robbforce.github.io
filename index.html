@@ -1,9 +1,15 @@
 ---
 layout: default
-title: Home
+title: Posts
 ---
+<div>
+  <iframe name="iframe1" align="right" frameborder="0" width=80%>
+    Sorry your browser does not support inline frames.
+  </iframe>
+</div>
+
 <ul>
-    {% for post in site.posts %}
-        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
+  {% for post in site.posts %}
+    <li><a href="{{ post.url }}" target="iframe1">{{ post.title }}</a></li>
+  {% endfor %}
 </ul>

@@ -3,15 +3,28 @@
   <head>
       <meta charset="UTF-8" />
       <title></title>
+      <meta name="viewport" content="width=device-width">
+  
+      <!-- Embedded stylesheet -->
+      <style>
+        iframe,img{
+          float:right;
+        }
+        div{
+          clear:both;
+        }
+    </style>
   </head>
-  <body>
 
-    <h1>{{ site.title }}</h1>
-    <h2>{{ page.title }}</h2>
+  <body>
+    <h2>{{ site.title }}</h2>
+    <h3>{{ page.title }}</h3>
     
-    <p>Index:</p>
-    <p><a href="index.html">Home</a></p>
-    <p><a href="kittens.html">Kittens</a></p>
+    <p>
+      <a href="index.html">Posts</a> - 
+      <a href="packages/">Packages</a> - 
+      <a href="kittens.html">Kittens</a>
+    </p>
     <hr />
       
     {{ content }}
